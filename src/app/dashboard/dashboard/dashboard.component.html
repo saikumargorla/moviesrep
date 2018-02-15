@@ -1,0 +1,17 @@
+<p>
+  dashboard works!
+</p>
+<div>
+<table *ngIf='movies'>
+  <tr>
+   <th>name</th>
+     <th>branch</th>
+     </tr>
+     <tr *ngFor='let id of movies'>
+       <td>
+         {{movies.name}} 
+         {{movies.Rating}}
+         </td>
+     </tr>
+   </table>
+</div>

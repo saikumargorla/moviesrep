@@ -1,0 +1,30 @@
+<p>
+  movielist works!
+</p>
+
+
+<table>
+  <tr>
+      <td>Name</td>
+      <td>{{name}}</td>
+  </tr>
+  <tr>
+      <td>releasedate</td>
+      <td>{{Release_date}}</td>
+  </tr>
+  <tr *ngIf='showDetails'>
+      <td>rating</td>
+      <td>{{Rating}}</td>
+  </tr>
+  <tr *ngIf='showDetails'>  
+      <td>language</td>
+      <td>{{language}}</td>
+  </tr>
+  </table>
+  <br/>
+  <button (click)="toggleDetails()">
+    {{showDetails ? 'Hide':'Show'}} Details
+  </button>
+  id:<input [(ngModel)]='id'>
+  <br/>
+  You Entered:{{id}}
